@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> forms</title>
+	<style>
+	
+	</style>
+</head>
+<body>
+<form action="aa.html" target="_blank" method="GET" >
+	<fieldset>
+		<legend>CAPTİON</legend>
+		first name:<br>
+		<input type="text" name="firstname" value="kaan" style="width:200px" size="10">
+		<input type="submit" name="change" value="submit">
+		password:
+		<input type="password" name="psw" maxlength="6" size="6" autofocus required>
+		<button type="button" onclick="alert('please choose a 6 digit password')">if it's not working</button>
+		<hr>
+		<input type="radio" name="colour" value="red" style="color:red">RED<br>
+		<input type="radio" name="colour" value="blue" style="color:blue">BLUE<br>
+		<hr>
+		
+	</fieldset>
+	
+	<fieldset>
+		<legend>section</legend>
+		select:<br>
+		<select name="color" size="2" multiple>
+			<option value="red">red</option>
+			<option value="yellow" selected>yellow</option><!--X-->
+			<option value="blue">blue</option>
+		</select>
+		<hr>
+		<input list="organs" name="organs yes" >
+		<datalist id="organs">
+			<option value="hand">
+			<option value="head">
+			<option value="arm">
+		</datalist>
+		
+	</fieldset>
+	
+	<fieldset>
+		<textarea rows="10" cols="50">i am playing basketball</textarea>
+	</fieldset>
+	
+	<fieldset>
+		<input type="submit" value="OKK">
+		<input type="button" value="heyyy">
+		<input type="reset" value="sil">
+		<input type="checkbox" value="cat">i have a cat</input>
+		color: disabled
+		<input type="color" value="#991122" disabled>
+		date:
+		<input type="date" value="13-11-2003" min="2000-10-01">
+		file:
+		<input type="file" name="myfile">
+		search:
+		<input type="search">
+		number:read only
+		<input type="number" min="0" max="2000" step="50" value="200" readonly>
+		phone:
+		<input type="tel" name="phone" pattern="[500-600]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="phone">
+	</fieldset>
+	
+</form>
+	<button type="button" onclick="alert('we hacked you')">do not click me</button>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+		0
+		<input type="range" id="a" name="a" value="50">
+		100 +
+		<input type="number" id="b" name="b" value="50">
+		=
+		<output name="x" for="a b"></output>
+</form>
+ 
+	
+
+</body>
+</html>
